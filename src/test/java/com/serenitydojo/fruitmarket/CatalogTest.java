@@ -1,7 +1,9 @@
 package com.serenitydojo.fruitmarket;
 
+import com.serenitydojo.Catalog;
 import org.junit.Test;
 
+import static com.serenitydojo.Fruit.Apple;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class CatalogTest {
@@ -9,9 +11,9 @@ public class CatalogTest {
     @Test
     public void shouldBeAbleToUpdateTheCurrentPriceOfAFruit() {
 // TODO: Uncomment this code and make it work
-        // Catalog catalog = new Catalog();
-        // catalog.setPriceOf(Apple, 4.00);
-        // assertThat(catalog.getPriceOf(Apple)).isEqualTo(4.00);
+         Catalog catalog = new Catalog();
+         catalog.setPriceOf(Apple, 4.00);
+         assertThat(catalog.getPriceOf(Apple)).isEqualTo(4.00);
     }
 
     @Test
